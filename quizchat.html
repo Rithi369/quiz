@@ -32,7 +32,7 @@
             background-color: #fff;
             border-radius: 10px;
             width: 500px;
-            max-width: 95%; /* Corrected value */
+            max-width: 95%; 
         }
 
         ul {
@@ -167,7 +167,7 @@
     const loadQuiz = () => {
         deselectAnswers();
         const currentQuizData = quizData[currentQuiz];
-        questionElement.innerHTML = currentQuizData.question; // Changed innerText to innerHTML
+        questionElement.innerHTML = currentQuizData.question; 
         a_text.innerHTML = currentQuizData.a;
         b_text.innerHTML = currentQuizData.b;
         c_text.innerHTML = currentQuizData.c;
@@ -189,7 +189,7 @@
                 loadQuiz();
             else {
                 quiz.innerHTML = `<h2>You answered ${score} questions correctly</h2>
-                    <button onclick="location.reload()">Play Again</button> ` // Changed history.go(0) to location.reload()
+                    <button onclick="location.reload()">Play Again</button> ` 
             }
         }
     });
